@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+
+@font-face {
+    font-family: "Salaryman";
+    src: url(../public/font/salaryman/SALARYMAN.ttf), url(../public/font/salaryman/salaryma-webfont.woff), url(../public/font/salaryman/salaryma-webfont.woff2)
+}
+
+:root {
+    --color-primary: #232E6F;
+
+    --color-secondary-darker: #CC1228;
+    --color-secondary: #EF495D;
+    --color-secondary-light: #F47C8A;
+    --color-secondary-lighter: #F9BEC5;
+
+    --color-tertiary-darker: #30409A;
+    --color-tertiary: #50B8E9;
+
+    --color-background: #F6E1ED;
+    
+    --color-grey: #c4c4c4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+h1,
+.h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: "Salaryman", "Syncopate", "Inter", sans-serif;
+}
+
+h2,
+.h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+h3,
+.h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+p,
+.p,
+a,
+.a {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.text-detail {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.text-detail-link {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.wrapper {
+    width: 90%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-gradient-vertical {
+    background: -webkit-linear-gradient(bottom, var(--color-secondary), var(--color-primary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-horizontal {
+    background: -webkit-linear-gradient(right, var(--color-secondary), var(--color-primary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and ( min-width: 672px) {
+    h1,
+    .h1 {
+        font-size: 4.6rem;
+    }
+
+    h2,
+    .h2 {
+    font-size: 2.6rem;
+    }
+
+    p,
+    .p,
+    a,
+    .a {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .wrapper {
+        width: 75%;
+    }
+}
+
+@media screen and ( min-width: 990px) {
+    
+}
+
+@media screen and ( min-width: 1296px) {
+    h1,
+    .h1 {
+        font-size: 6rem;
+    }
+}

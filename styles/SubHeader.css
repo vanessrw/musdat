@@ -1,0 +1,28 @@
+.subheader {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding-bottom: 20px;
+}
+
+.subheader.center {
+    text-align: center;
+}
+
+.subheader.left {
+    text-align: left;
+}
+
+.subheader.right {
+    text-align: right;
+}
+
+.subheader h2 {
+    color: rgb(56, 31, 48);
+    margin-bottom: 16px;
+}
+
+.subheader h3 {
+    color: red;
+    margin-bottom: 6px;
+}

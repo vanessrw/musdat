@@ -1,0 +1,15 @@
+.about {
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 0px 0 50px 0;
+    margin-top: 80px;  
+}
+
+.about .about-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

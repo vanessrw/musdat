@@ -1,0 +1,48 @@
+.missing-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.missing-content {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}
+
+.missing-content h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 6rem;
+    color: rgb(248, 135, 135);
+    margin-bottom: 10px;
+}
+
+.missing-content h2 {
+    font-size: 2.7rem;
+    color: rgb(248, 135, 135);
+    margin-bottom: 35px;
+}
+
+.missing-content .button {
+    width: fit-content;
+}
+
+.missing-illustration {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 860px) {
+    .missing-content h1 {
+        font-size: 4rem;
+    }
+
+    .missing-content h2 {
+        font-size: 2rem;
+    }
+}

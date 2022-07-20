@@ -1,0 +1,32 @@
+.button.primary {
+  background-color: rgb(39, 39, 124);
+  padding: 10px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  color: white;
+}
+
+.button.primary .button-text.primary {
+  color: white;
+}
+
+.button.primary:hover {
+  background-color: rgb(255,192,203);
+}
+
+.button.primary:focus {
+  background-color: rgb(255,20,147);
+}
+
+@media screen and (max-width: 430px) {
+  .button.primary .button-text.primary {
+    font-size: 0.9rem;
+  }
+}

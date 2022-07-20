@@ -1,0 +1,133 @@
+.navbar {
+    width: 100%;
+    height: fit-content;
+    background-color: transparent;
+    z-index: 999;
+}
+
+.navbar .navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.navbar .navbar-wrapper .logo {
+    cursor: pointer;
+    z-index: 999999;
+}
+
+.navbar .navbar-wrapper .menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 400px;
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 70px;
+    width: 100%;
+    z-index: 99999;
+    transform: translateY(-100%);
+    transition: transform 1s ease-in-out;
+}
+
+.navbar .navbar-wrapper .menu.slide {
+    transform: translateY(0);
+}
+
+.navbar .navbar-wrapper .menu .menu-item {
+    margin: 0 8px;
+}
+
+.navbar .navbar-wrapper .menu .menu-item a.link {
+    color: rgb(92, 64, 51);
+    font-weight: 600;
+}
+
+.navbar .navbar-wrapper .menu-toggle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    z-index: 999999;
+}
+
+.navbar .navbar-wrapper .menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    left: -6px;
+    top: -4px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.navbar .navbar-wrapper .menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--color-primary);
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar .navbar-wrapper .menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+  
+.navbar .navbar-wrapper .menu-toggle span:last-child {
+    transform-origin: 0 0;
+}
+  
+.navbar .navbar-wrapper .menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.navbar .navbar-wrapper .menu-toggle input:checked ~ span:last-child {
+    transform: rotate(-45deg) translate(-2px, 0);
+}
+  
+.navbar .navbar-wrapper .menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+}
+
+@media screen and ( min-width: 672px) {
+    .navbar .navbar-wrapper {
+        padding: 15px 0;
+    }
+}
+
+@media screen and ( min-width: 990px) {
+    .navbar .navbar-wrapper .menu {
+        display: flex;
+    }
+
+    .navbar .navbar-wrapper .menu-toggle {
+        display: none;
+    }
+
+    .navbar .navbar-wrapper .menu {
+        background-color: transparent;
+        transform: translateY(0);
+        flex-direction: row;
+        height: fit-content;
+        width: fit-content;
+        padding-top: 0;
+        position: static;
+    }
+}
+
+@media screen and ( min-width: 1296px) {
+    .navbar .navbar-wrapper .menu .menu-item {
+        margin: 0 13px;
+    }
+}
