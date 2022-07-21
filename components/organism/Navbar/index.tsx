@@ -20,6 +20,7 @@ export default function Navbar() {
           <MenuItem destination="char" link="/char" />
           <MenuItem destination="squir" link="/squir" />
           <MenuItem destination="bulba" link="/bulba" />
+          <MenuItem destination="POKEDEX" link="/pokedex" />
           <div className="menu-item">
             <Button text="@vanessrw" destination="https://www.instagram.com/" />
           </div>

@@ -15,6 +15,7 @@ import '../styles/Header.css';
 import '../styles/Hero.css';
 import '../styles/Navbar.css';
 import '../styles/SubHeader.css';
+import '../styles/UserFind.css';
 
 function MyApp({Component, pageProps}: AppProps) {
   return (
